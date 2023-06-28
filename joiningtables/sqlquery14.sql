@@ -46,7 +46,7 @@ SELECT c.clientid, c.clientfname, c.clientlname, c.clientemailid, p.projectid, p
 FROM client_d c RIGHT JOIN project p
 ON p.clientid = c.clientid
 WHERE c.age BETWEEN 25 AND 35
-ORDER BY c.age AND p.projectid;
+ORDER BY c.age, p.projectid;
 
 Output:
 +----------+-------------+-------------+----------------+-----------+-------------+
