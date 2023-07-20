@@ -27,10 +27,10 @@ Table shop_2:
 Note: Write keywords of syntax in uppercase alphabets.
 
 Solution:
-SELECT item_name, item_type FROM shop_1 LEFT JOIN shop_2
-USING(item_name, item_type)
-WHERE shop_2.item_id IS NULL
-ORDER BY item_name;
+SELECT item_name, item_type FROM shop_1
+    LEFT JOIN shop_2 USING(item_name, item_type)
+        WHERE shop_2.item_name IS NULL
+            ORDER BY item_name;
 
 Output:
 +------------+------------+
